@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container flex-column">
+        <div class="metronome flex-column">
+            <div class="display flex-column">
+                <div class="display-bpm">130</div>
+                <div class="display-text">BPM</div>
+                <div class="display-battery"><img src="./assets/icon/battery-quarter-solid.svg" alt=""></div>
+            </div>
+            <input type="range" min="60" max="200" name="bpm" id="bpm" class="bpm">
+            <div class="control flex-row">
+                <div class="btn left flex-column"><img src="./assets/icon/left.svg" alt="-" class="left-icon"></div>
+                <div class="btn play-stop flex-column"><img src="./assets/icon/play.svg" alt="play-stop" class="play-stop-icon"></div>
+                <div class="btn right flex-column"><img src="./assets/icon/rigth.svg" alt="+" class="right-icon"></div>
+            </div>
+        </div><!--Fin "metronome"-->
+    </main>
+    <script src="./js/p5.min.js"></script>
+    <script src="./js/p5.sound.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+@import "input";
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Audiowide', cursive;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 100vh;
+    width: auto;
+}
+.metronome{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(251, 236, 22);
+    box-shadow: inset 3px 3px 4px rgb(149, 140, 10), inset -3px -3px 4px rgb(149, 140, 10) ;
+    padding: 10px;
+    border-radius: 8px;
+    border: solid 1px black;
+    .display{
+        justify-content: space-evenly;
+        font-family: 'Press Start 2P', cursive;
+        height: 40%;
+        width: 100%;
+        font-size: 60px;
+        background-color: rgb(106, 167, 71);
+        border-radius: 4px;
+        border: solid 1px black;
+        box-shadow: inset 2px 2px black;
+        position: relative;
+        &-bpm{
+            font-family: inherit;
+        }
+        &-text{
+            font-family: inherit;
+            font-size: 15px;
+        }
+        &-battery{
+            height: 35px;
+            position: absolute;
+            bottom: 25px;
+            right: 5px;
+            img{
+                height: 25px;
+            }
+        }
+    }
+    .bpm{
+        height: 10%;
+        width: 80%;
+    }
+    .control{
+        height: 40%;
+        width: 100%;
+        justify-content: space-around;
+        .btn{
+            font-size: 40px;
+            height: 100%;
+            width: 25%;
+            border-radius: 15%;
+        }
+        .right{
+            border-right: 3px solid black;
+            img{
+                height: 55%;
+            }
+        }
+        .left{
+            border-left: 3px solid black;
+            img{
+                height: 55%;
+            }
+        }
+        .play-stop{
+            width: 50%;
+            height: 100%;
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+            img{
+                height: 80%;
+                position: relative;
+                left: 3px
+            }
+        }
+    }
+}
